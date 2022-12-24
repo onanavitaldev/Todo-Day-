@@ -1,6 +1,6 @@
 # Cette application utilise ElectronJS
 
-![GitHub Logo](/Capture d’écran 2022-12-23 215840.png)
+![GitHub Logo](/Screenshot 2022-12-23 215840.png)
 **Clone and run for a quick way to see Electron in action.**
 
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start) within the Electron documentation.
