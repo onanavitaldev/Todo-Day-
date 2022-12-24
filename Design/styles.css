@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Variables */
+:root
+{
+    --bgcolor: #294ea4;
+    --bgfont: #000000e6;
+    --white: #f1f1f1;
+    --transition: all 0.4s ease-in 0s;
+    --radius: 5px;
+    --max-radius: 50px;
+    --paragraphe: 18px;
+    --title: 25px;
+    --gray: #ddd;
+    --family: Montserrat;
+}
+.btn
+{
+    background-color: var(--bgcolor);
+    border-radius: var(--radius);
+    color: var(--gray);
+    padding: 0.6em 0.7em;
+    transition: var(--transition);
+    font-size: var(--paragraphe);
+}
+.btn:hover
+{
+    background-color: var(--bgcolor);
+}
+/* DOM */
+*
+{
+    box-sizing: border-box;
+    font-family: var(--family);
+}
+*::selection
+{
+    background-color: var(--bgcolor);
+    color: var(--white);
+}
+/* Body */
+body
+{
+    /* background-color: var(--bgfont); */
+    font-family: var(--family);
+}
+/* left navigation */
+#app #app-left-nav
+{
+    border-right: 1px solid;
+    background: var(--bgfont);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+#app #app-left-nav img
+{
+    border-radius: var(--max-radius);
+    cursor: pointer;
+}
+#app #app-left-nav #account
+{
+    color: var(--white);
+}
+#app #app-left-nav #tools a
+{
+    line-height: 3;
+}
+/* Content */
+#app-content
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),
+    url("../Img/win11.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 15em;
+}
+#app-content #blur
+{
+    background-color: rgba(0,0,0,0.6);
+    border-radius: var(--radius);
+    padding: 1.5em;
+    height: 50vh;
+    filter: blur(80%);
+    -webkit-filter: blur(80%);
+}
+#app-content #blur span
+{
+    line-height: 2.3;
+}
+#app-content #blur .description p
+{
+    line-height: 1.6;
+}
+
+/* Add styles here to customize the appearance of your app */

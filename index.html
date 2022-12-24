@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="Design/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="Library/tailwind.min.css">
+    <link rel="shortcut icon" href="Img/notepad (1).png" type="image/x-icon">
+    <!-- Title -->
+    <title>ToDo Day !</title>
+  </head>
+  <!-- Body of App -->
+  <body>
+    <div class="flex justify-between" id="app">
+      <div class="block w-64 shadow-lg" id="app-left-nav">
+        <div class="block flex-wrap item-center" id="account">
+          <!-- <img src="Img/avatar.jpg" class="rounded-lg shadow-lg" alt="Moi" height="60" width="60" /> -->
+          <p class="text-2xl">ToDo Day !</p>
+          <span class="text-gray-600">En ligne</span>
+        </div><br>
+        <div class="block flex-wrap text-gray-400" id="tools">
+          <a href="#">Aujourd'hui</a><br>
+          <a href="#">Activités</a><br>
+          <a href="#">Chronomètre</a><br>
+          <a href="#">Informations</a><br>
+          <a href="#">Site web</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center text-white align-center" id="app-content">
+      <div class="block text-center shadow-lg" id="blur">        
+          <div class="block titled">
+          <div class="flex justify-center">
+            <img src="Img/notepad (2).png" class="center" height="95" width="95" />
+          </div>
+          <h1 class="title text-3xl">Aujourd'hui !</h1>
+          <span class="text-1xl text-gray-500" id="date">
+            
+          </span>
+        </div>
+        <div class="description">
+          <p class="w-64 text-gray-300">
+            Organisez vos activités de la journée et gagnez en productivité.
+          </p>
+          <br />
+          <a href="Tasks.html" class="btn">Ajouter une activité</a>
+        </div>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="App/App.js"></script>
+  </body>
+</html>

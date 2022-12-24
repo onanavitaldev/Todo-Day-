@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="Design/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="Library/tailwind.min.css">
+    <link rel="shortcut icon" href="Img/notepad (1).png" type="image/x-icon">
+    <!-- Title -->
+    <title>ToDo Day !</title>
+  </head>
+  <!-- Body of App -->
+  <body>
+    <div class="flex justify-between" id="app">
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="App/App.js"></script>
+  </body>
+</html>
